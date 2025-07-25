@@ -66,6 +66,10 @@ public static class Config
         {
             Scopes = { "discountapi.read", "discountapi.write", "discountapi.fullpermission" }
         },
+        new ApiResource("ResourceCargo", "Cargo API")
+        {
+            Scopes = { "cargoapi.read", "cargoapi.write", "cargoapi.fullpermission" }
+        },
         new ApiResource(IdentityServerConstants.LocalApi.ScopeName, "Access to local APIs")
         {
             Scopes = { IdentityServerConstants.LocalApi.ScopeName }
@@ -89,6 +93,9 @@ public static class Config
         new ApiScope("discountapi.read", "Read access to Discount API"),
         new ApiScope("discountapi.write", "Write access to Discount API"),
         new ApiScope("discountapi.fullpermission", "Full access to Discount API"),
+        new ApiScope("cargoapi.read", "Read access to Cargo API"),
+        new ApiScope("cargoapi.write", "Write access to Cargo API"),
+        new ApiScope("cargoapi.fullpermission", "Full access to Cargo API"),
         new ApiScope(IdentityServerConstants.LocalApi.ScopeName, "Access to local APIs")
     };
 
@@ -100,7 +107,7 @@ public static class Config
             ClientName = "MultiShop Client User",
             AllowedGrantTypes = GrantTypes.ClientCredentials,
             ClientSecrets = { new Secret("multishop-user-secret".Sha256()) },
-            AllowedScopes = { "catalogapi.read", "orderapi.read", "discountapi.read" }
+            AllowedScopes = { "catalogapi.read", "orderapi.read", "discountapi.read", "cargoapi.read" }
             ///AllowedScopes = { "orderapi.read", "discountapi.read" }
         },
         new Client
@@ -109,7 +116,7 @@ public static class Config
             ClientName = "MultiShop Admin User",
             AllowedGrantTypes = GrantTypes.ClientCredentials,
             ClientSecrets = { new Secret("multishop-admin-secret".Sha256()) },
-            AllowedScopes = { "catalogapi.fullpermission", "orderapi.fullpermission", "discountapi.fullpermission", 
+            AllowedScopes = { "catalogapi.fullpermission", "orderapi.fullpermission", "discountapi.fullpermission", "cargoapi.fullpermission", 
                 IdentityServerConstants.LocalApi.ScopeName,
                 IdentityServerConstants.StandardScopes.OpenId,
                 IdentityServerConstants.StandardScopes.Profile,
@@ -124,7 +131,7 @@ public static class Config
             ClientSecrets = { new Secret("multishop-webapp-secret".Sha256()) },
             RedirectUris = { "https://localhost:5001/signin-oidc" },
             PostLogoutRedirectUris = { "https://localhost:5001/signout-callback-oidc" },
-            AllowedScopes = { "openid", "profile", "email", "catalogapi.read", "orderapi.read", "discountapi.read" },
+            AllowedScopes = { "openid", "profile", "email", "catalogapi.read", "orderapi.read", "discountapi.read", "cargoapi.read" },
             AllowOfflineAccess = true
         }
     };

@@ -1,0 +1,6 @@
+Catalog -> 7147
+Discount -> 7146
+Order -> 7145
+Cargo -> 7144
+
+IdentityServer -> 5001

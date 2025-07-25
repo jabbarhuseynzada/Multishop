@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		Port Numbers.txt = Port Numbers.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{30FE1CA9-2740-4F69-AFCC-7860CB28E0C7}"
 EndProject
@@ -32,6 +35,18 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{9F82B420-A626-44D8-8E4C-350F78AA6E4A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.IdentityServer", "IdentityServer\MultiShop.IdentityServer\MultiShop.IdentityServer.csproj", "{EA14094F-FB55-5ABC-1402-B4229C4AD0B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{4ECCCC7C-0491-44A6-836C-CB0A2993719A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.Business", "Services\Cargo\MultiShop.Cargo.Business\MultiShop.Cargo.Business.csproj", "{674ABA33-5D58-4ED2-82DE-E3B3ABCFB829}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.DataAccessLayer", "MultiShop.Cargo.DataAccessLayer\MultiShop.Cargo.DataAccessLayer.csproj", "{5E063117-EABF-45A0-AB03-535DD55227AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.EntityLayer", "MultiShop.Cargo.EntityLayer\MultiShop.Cargo.EntityLayer.csproj", "{3E584627-F12F-4674-B53D-75CF0509F74D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.DTOLayer", "MultiShop.Cargo.DTOLayer\MultiShop.Cargo.DTOLayer.csproj", "{85DD08B6-5A41-4EF1-B097-C1677864B6D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.WebApi", "MultiShop.Cargo.WebApi\MultiShop.Cargo.WebApi.csproj", "{77BEFF56-46D4-43BA-A3FC-6D864BF44A4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +82,26 @@ Global
 		{EA14094F-FB55-5ABC-1402-B4229C4AD0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA14094F-FB55-5ABC-1402-B4229C4AD0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA14094F-FB55-5ABC-1402-B4229C4AD0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674ABA33-5D58-4ED2-82DE-E3B3ABCFB829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674ABA33-5D58-4ED2-82DE-E3B3ABCFB829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674ABA33-5D58-4ED2-82DE-E3B3ABCFB829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674ABA33-5D58-4ED2-82DE-E3B3ABCFB829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E063117-EABF-45A0-AB03-535DD55227AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E063117-EABF-45A0-AB03-535DD55227AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E063117-EABF-45A0-AB03-535DD55227AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E063117-EABF-45A0-AB03-535DD55227AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E584627-F12F-4674-B53D-75CF0509F74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E584627-F12F-4674-B53D-75CF0509F74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E584627-F12F-4674-B53D-75CF0509F74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E584627-F12F-4674-B53D-75CF0509F74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DD08B6-5A41-4EF1-B097-C1677864B6D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DD08B6-5A41-4EF1-B097-C1677864B6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DD08B6-5A41-4EF1-B097-C1677864B6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DD08B6-5A41-4EF1-B097-C1677864B6D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BEFF56-46D4-43BA-A3FC-6D864BF44A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BEFF56-46D4-43BA-A3FC-6D864BF44A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BEFF56-46D4-43BA-A3FC-6D864BF44A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BEFF56-46D4-43BA-A3FC-6D864BF44A4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +120,12 @@ Global
 		{A7F14BD0-EAE9-4172-A43F-ED728C2973D3} = {2CAA83DD-C982-4431-A52E-AF869C3C9BFF}
 		{8C180F8B-4AFC-4B30-A665-4605E240E352} = {A952E101-4788-443A-8405-62CC84A81A60}
 		{EA14094F-FB55-5ABC-1402-B4229C4AD0B1} = {9F82B420-A626-44D8-8E4C-350F78AA6E4A}
+		{4ECCCC7C-0491-44A6-836C-CB0A2993719A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{674ABA33-5D58-4ED2-82DE-E3B3ABCFB829} = {4ECCCC7C-0491-44A6-836C-CB0A2993719A}
+		{5E063117-EABF-45A0-AB03-535DD55227AD} = {4ECCCC7C-0491-44A6-836C-CB0A2993719A}
+		{3E584627-F12F-4674-B53D-75CF0509F74D} = {4ECCCC7C-0491-44A6-836C-CB0A2993719A}
+		{85DD08B6-5A41-4EF1-B097-C1677864B6D4} = {4ECCCC7C-0491-44A6-836C-CB0A2993719A}
+		{77BEFF56-46D4-43BA-A3FC-6D864BF44A4E} = {4ECCCC7C-0491-44A6-836C-CB0A2993719A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFB86645-DDC6-4C38-A8C7-531D6A52424E}
